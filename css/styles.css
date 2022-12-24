@@ -1,0 +1,108 @@
+/*FUENTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Sans&display=swap');
+
+/*ESTILOS BASICOS PARA BODY*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #f6f6fe;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+
+.contenedor-flex {
+    display:flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+/*TITULOS*/
+
+h1 {
+    color: #6d708d;
+}
+h2 {
+  margin:10px;
+}
+
+
+/*TOGGLE SWITCH*/
+
+.contenedor-toggle {
+    margin-bottom: 2.5rem;
+    color: #b3b5c6;
+}
+
+.contenedor-precio {
+    border-radius: 10px;
+    padding: 30px;
+    margin:5px;
+    background-color: #fff;
+    box-shadow: 0 5px 12px rgba(10, 10, 10, 0.1);
+    color: #6d708d;
+    width: 250px;
+    
+
+}
+
+
+.contenedor-precio p{
+    font-size: 2rem;
+    color: #484b5b;
+    margin:0;
+}
+
+.contenedor-precio ul {
+    list-style: none;
+    padding:0;
+    border-top: 1.5px solid #e7e7eb;
+}
+
+.contenedor-precio ul li {
+    border-bottom: 1.5px solid #e7e7eb;
+    padding: 15px 0;
+}
+
+.contenedor-precio button {
+    border:none;
+    border-radius:5px;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    font-size: small;
+    color:#f3f3f3;
+    background: linear-gradient(90deg,#9fa3ed, #6d71df );
+    cursor:pointer;
+}
+
+.opcion-profesional {
+
+    transform: scale(1.1);
+    background: linear-gradient(90deg,#9fa3ed, #6d71df );
+    color: #fff;
+}
+
+.opcion-profesional p {
+    color: #fff;
+}
+
+#profesional {
+    background: #fff;
+    color: #6d71df;
+    border: 1px solid transparent;
+
+}
+
+#profesional:hover {
+    background: linear-gradient(90deg,#9fa3ed, #6d71df );
+    color:#fff;
+    border-color: #fff;
+    
+}
