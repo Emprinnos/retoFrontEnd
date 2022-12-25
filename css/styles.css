@@ -5,194 +5,177 @@
 /*ESTILOS BASICOS PARA BODY*/
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    min-height: 100vh;
-    background-color: #f6f6fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f6f6fe;
 }
 
 /*CONTENEDOR PRINCIPAL*/
 
 .contenedor-flex {
-    display:flex;
+  display: flex;
 }
-
 
 /*TITULOS*/
 
 h1 {
-    color: #6d708d;
+  color: #6d708d;
 }
 h2 {
-  margin:10px;
+  margin: 10px;
 }
-
 
 /*TOGGLE SWITCH*/
 
 .contenedor-toggle {
-
-    margin-bottom: 2.5rem;
-    color: #b3b5c6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  margin-bottom: 2.5rem;
+  color: #b3b5c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.toggle-wraper{
-    padding-right: 17px;
-    padding-top: 3px;
- 
+.toggle-wraper {
+  padding-right: 17px;
+  padding-top: 3px;
 }
 .switch {
-    background-color: #9fa3ed;
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-    border-radius: 20px;
-    transition: all 0.3s;
-  }
-  .switch::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    transition: all 0.3s;
-  }
-  
-  #toggle:checked + .switch::after {
-    left: 30px;
-  }
-  #toggle:checked + .switch {
-    background-color: #c6c8f3;
-  }
-  #toggle {
-    transform: scale(0);
-  } 
+  background-color: #9fa3ed;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
 
-
-
-
+#toggle:checked + .switch::after {
+  left: 30px;
+}
+#toggle:checked + .switch {
+  background-color: #c6c8f3;
+}
+#toggle {
+  transform: scale(0);
+}
 
 /*TARJETAS DE PRECIO CONTENEDOR PRINCIPAL*/
 
 .contenedor-precio {
-    border-radius: 10px;
-    padding: 30px;
-    margin:10px 5px;
-    background-color: #fff;
-    box-shadow: 0 5px 12px rgba(10, 10, 10, 0.1);
-    color: #6d708d;
-    width: 250px;
-    
+  border-radius: 10px;
 
+  padding: 30px;
+
+  margin: 10px 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 12px rgba(10, 10, 10, 0.1);
+  color: #6d708d;
+  width: 250px;
 }
 
 /*TEXTO PRECIO*/
 
-.contenedor-precio p{
-    font-size: 2rem;
-    color: #484b5b;
-    margin:0;
+.contenedor-precio p {
+  font-size: 2rem;
+  color: #484b5b;
+  margin: 0;
 }
 
 /*OCULTA LOS PRECIOS MENSUALES*/
 
-.precio-mensual{
-    display:none;
+.precio-mensual {
+  display: none;
 }
 
 .mostrar .precio-anual {
-    display:none;
+  display: none;
 }
 
 .mostrar .precio-mensual {
-    display:block;
+  display: block;
 }
 /*DESCRIPCION DE CADA SERVICIO*/
 
 .contenedor-precio ul {
-    list-style: none;
-    padding:0;
-    border-top: 1.5px solid #e7e7eb;
+  list-style: none;
+  padding: 0;
+  border-top: 1.5px solid #e7e7eb;
 }
 
 .contenedor-precio ul li {
-    border-bottom: 1.5px solid #e7e7eb;
-    padding: 15px 0;
+  border-bottom: 1.5px solid #e7e7eb;
+  padding: 15px 0;
 }
-
 
 /*BOTONES*/
 
 .contenedor-precio button {
-    border:none;
-    border-radius:5px;
-    width: 100%;
-    padding: 10px;
-    letter-spacing: 1.5px;
-    font-size: small;
-    color:#f3f3f3;
-    background: linear-gradient(90deg,#9fa3ed, #6d71df );
-    cursor:pointer;
-    border: 1px solid transparent;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1.5px;
+  font-size: small;
+  color: #f3f3f3;
+  background: linear-gradient(90deg, #9fa3ed, #6d71df);
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .contenedor-precio button:hover {
-    background: #fff;
-    color:#6d71df;
-    border-color:#6d71df;
-
+  background: #fff;
+  color: #6d71df;
+  border-color: #6d71df;
 }
 
 /*ESTILOS PARA LA OPCION PROFESIONAL*/
 
 .opcion-profesional {
-
-    transform: scale(1.1);
-    background: linear-gradient(90deg,#9fa3ed, #6d71df );
-    color: #fff;
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #9fa3ed, #6d71df);
+  color: #fff;
 }
 
 .opcion-profesional p {
-    color: #fff;
+  color: #fff;
 }
 
 /*BOTON OPCION PROFESIONAL*/
 
 #boton-profesional {
-    background: #fff;
-    color: #6d71df;
-    border: 1px solid transparent;
-
+  background: #fff;
+  color: #6d71df;
+  border: 1px solid transparent;
 }
 
 #boton-profesional:hover {
-    background: linear-gradient(90deg,#9fa3ed, #6d71df );
-    color:#fff;
-    border-color: #fff;
-    
+  background: linear-gradient(90deg, #9fa3ed, #6d71df);
+  color: #fff;
+  border-color: #fff;
 }
-
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 768px){
-    .contenedor-flex {
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+  .contenedor-flex {
+    flex-direction: column;
+  }
 
-    .opcion-profesional {
-
-        transform: scale(1);
- 
-    }
+  .opcion-profesional {
+    transform: scale(1);
+  }
 }
