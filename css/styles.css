@@ -104,12 +104,19 @@ h2 {
     margin:0;
 }
 
-/*OCULTA LOS PRECIOS ANUALES*/
+/*OCULTA LOS PRECIOS MENSUALES*/
 
-.precio-anual{
+.precio-mensual{
     display:none;
 }
 
+.mostrar .precio-anual {
+    display:none;
+}
+
+.mostrar .precio-mensual {
+    display:block;
+}
 /*DESCRIPCION DE CADA SERVICIO*/
 
 .contenedor-precio ul {
@@ -161,14 +168,14 @@ h2 {
 
 /*BOTON OPCION PROFESIONAL*/
 
-#profesional {
+#boton-profesional {
     background: #fff;
     color: #6d71df;
     border: 1px solid transparent;
 
 }
 
-#profesional:hover {
+#boton-profesional:hover {
     background: linear-gradient(90deg,#9fa3ed, #6d71df );
     color:#fff;
     border-color: #fff;
