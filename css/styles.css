@@ -87,7 +87,7 @@ h2 {
 .contenedor-precio {
     border-radius: 10px;
     padding: 30px;
-    margin:5px;
+    margin:10px 5px;
     background-color: #fff;
     box-shadow: 0 5px 12px rgba(10, 10, 10, 0.1);
     color: #6d708d;
@@ -102,6 +102,12 @@ h2 {
     font-size: 2rem;
     color: #484b5b;
     margin:0;
+}
+
+/*OCULTA LOS PRECIOS ANUALES*/
+
+.precio-anual{
+    display:none;
 }
 
 /*DESCRIPCION DE CADA SERVICIO*/
@@ -167,4 +173,19 @@ h2 {
     color:#fff;
     border-color: #fff;
     
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px){
+    .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .opcion-profesional {
+
+        transform: scale(1);
+ 
+    }
 }
